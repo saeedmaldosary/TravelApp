@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <div class="title">
+            Travel App✈️
+        </div>
+    </header>
+
+    <main>
+
+        <p class="inputTitle">Flight from</p>
+        <input type="text" class="cityName" id="fromCity" placeholder="City name">
+
+        <p class="inputTitle">Flight to</p>
+        <input type="text" class="cityName" id="flightTo" placeholder="City name">
+
+        <p class="inputTitle">Flight date</p>
+        <input type="date" class="date" id="flightDate" required>
+
+        <p class="inputTitle">Flight end</p>
+        <input type="date" class="date" id="flightEnd" required>
+
+        <br>
+        <button class="btn" id="submitBtn">Submit</button>
+
+        <!-- Results -->
+
+        <div id="resultsCon">
+
+            <p class="result">Results</p>
+
+            <img id="pixImg" src="">
+
+            <p class="result">Flight info</p>
+
+            <div class="resultInfo">
+                <p id="flight_From"></p>
+                <p id="flight_To"></p>
+                <p id="flight_Date"></p>
+                <p id="flight_End"></p>
+            </div>
+
+            <p class="result">Weather info</p>
+
+            <div class="resultInfo">
+                <p id="maxTemp"></p>
+                <p id="lowTemp"></p>
+            </div>
+
+            <br>
+            <button class="btn" id="removeBtn" style="background-color: red;">Remove flight</button>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>Develop with love by Saeed Aldosary</p>
+
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+
+</body>
+
+</html>
