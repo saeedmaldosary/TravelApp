@@ -1,5 +1,5 @@
-# Project 5
-FEND Capstone - Travel App
+# FEND Capstone - Travel App
+Project 5 Udacity Front-End Web Development Course
 
 # Project overview
 This project will help the users to know the wather of the city that they want to travel to and to see image about it.
