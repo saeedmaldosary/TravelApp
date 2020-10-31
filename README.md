@@ -25,4 +25,3 @@ http://localhost:8081/
 # Extra feature
 Allow the user to remove the trip.
 
-- develop by Saeed Aldosary
